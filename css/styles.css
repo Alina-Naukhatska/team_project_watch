@@ -1,0 +1,156 @@
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about.css');
+@import url('./catalog.css');
+@import url('./advertisement.css');
+@import url('./sale.css');
+@import url('./reviews.css');
+@import url('./contact.css');
+@import url('./footer.css');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-style: normal;
+  background: #fbfbfb;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  background: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-open {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 65px;
+  }
+}
+
+.section {
+  padding: 30px 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 50px 0;
+  }
+}
+
+.name-title {
+  color: #0c0c0c;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.64px;
+}
+
+@media screen and (min-width: 768px) {
+  .name-title {
+    color: #0c0c0c;
+    font-size: 48px;
+    line-height: 44px;
+    letter-spacing: -0.96px;
+  }
+}
+
+.name-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.28px;
+}
+
+@media screen and (min-width: 768px) {
+  .name-text {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+  }
+}
